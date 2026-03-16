@@ -13,6 +13,21 @@ the selection of suitable data types for attributes and data transformation.
 For data classification, 4 models were used, which are K-NN, Decision tree, Naive Bayes and SVM. The Models were evaluated by using a
 confusion matrix, accuracy, precision, recall and F1-score. The Naive Bayes model and the SVM model were considered best for the task, achieving 80% estimated accuracy and 88% estimated accuracy, respectively.
 
+## Methodology & Data Preparation
+To ensure high model performance, a rigorous data preparation pipeline was implemented:
+
+- Data Cleaning: Removed irrelevant attributes (e.g., Index), handled missing values (e.g., Latitude), and verified data integrity by checking for duplicates.
+
+- Feature Engineering: Normalized numerical attributes using Z-score and Min-Max scaling, and applied One-hot encoding to categorical data.
+
+- Dimensionality Reduction: Utilized PCA (Principal Component Analysis) to reduce the feature space from 40 to 16 components, managing data complexity while retaining variance.
+
+- Handling Class Imbalance: Applied SMOTE (Synthetic Minority Over-sampling Technique) and stratified sampling within cross-validation to address the scarcity of 'AtRisk' samples.
+
+## Model Comparison
+Four models (K-NN, Decision Tree, Naive Bayes, and SVM) were evaluated using 10-fold cross-validation and a final test dataset.
+
+
 ## Project Report
 For a detailed analysis and methodology, please refer to the full report:
 https://github.com/Unbee-lee/Building-a-classification-model/blob/main/Report/Report.pdf
