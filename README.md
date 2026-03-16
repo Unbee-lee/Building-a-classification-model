@@ -28,6 +28,7 @@ To ensure high model performance, a rigorous data preparation pipeline was imple
 ## Model Comparison
 Four models (K-NN, Decision Tree, Naive Bayes, and SVM) were evaluated using 10-fold cross-validation and a final test dataset.
 
+![Model_Comparison](./Report/Model_comparison.png)
 
 ## Project Report
 For a detailed analysis and methodology, please refer to the full report:
