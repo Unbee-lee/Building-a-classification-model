@@ -1,7 +1,8 @@
-## Overview
+## Vegetation Condition Classification Model
 The task is to build a classification model that can accurately predict the vegetation condition of each land
 parcel on Wadjuk Noongar country into the three categories, which are ‘Healthy’, ‘Degraded’ and ‘AtRisk’.
 
+## Overview
 Understanding the condition of vegetation is essential for maintaining biodiversity, managing fire risk, guiding cultural burns, and protecting culturally significant areas.
 The given dataset is ‘Assignment2025S2.sqlite’, where each record contains various indicators of environmental condition, such as vegetation health, soil properties, moisture availability, proximity to water, and signs of human or invasive
 species disturbance. 
@@ -18,11 +19,11 @@ To ensure high model performance, a rigorous data preparation pipeline was imple
 
 - Data Cleaning: Removed irrelevant attributes (e.g., Index), handled missing values (e.g., Latitude), and verified data integrity by checking for duplicates.
 
-- Feature Engineering: Normalized numerical attributes using Z-score and Min-Max scaling, and applied One-hot encoding to categorical data.
+- Scaling and encoding: Normalized numerical attributes using Z-score and Min-Max scaling, and applied One-hot encoding to categorical data.
 
 - Dimensionality Reduction: Utilized PCA (Principal Component Analysis) to reduce the feature space from 40 to 16 components, managing data complexity while retaining variance.
 
-- Handling Class Imbalance: Applied SMOTE (Synthetic Minority Over-sampling Technique) and stratified sampling within cross-validation to address the scarcity of 'AtRisk' samples.
+- Addresing Class Imbalance: Applied SMOTE (Synthetic Minority Over-sampling Technique) and stratified sampling within cross-validation to address the scarcity of 'AtRisk' samples.
 
 ## Model Comparison
 Four models (K-NN, Decision Tree, Naive Bayes, and SVM) were evaluated using 10-fold cross-validation and a final test dataset.
@@ -30,6 +31,7 @@ Four models (K-NN, Decision Tree, Naive Bayes, and SVM) were evaluated using 10-
 
 ## Project Report
 For a detailed analysis and methodology, please refer to the full report:
+
 https://github.com/Unbee-lee/Building-a-classification-model/blob/main/Report/Report.pdf
 
 
