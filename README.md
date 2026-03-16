@@ -15,7 +15,6 @@ confusion matrix, accuracy, precision, recall and F1-score. The Naive Bayes mode
 
 ## Project Report
 For a detailed analysis and methodology, please refer to the full report:
-
 https://github.com/Unbee-lee/Building-a-classification-model/blob/main/Report/Report.pdf
 
 
